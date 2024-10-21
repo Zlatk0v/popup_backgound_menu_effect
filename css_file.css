@@ -1,0 +1,24 @@
+body, html {
+    /* Additional styles can be added here if necessary */
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 700px;
+    background-color: #995258; /* Circle color */
+    border-radius: 50%; /* Creates a circular shape */
+    transform: translate(-50%, -50%); /* Centers the circle */
+    animation: fadeDown 1s forwards, expandCircle 1s 0.5s forwards; /* Animation effects */
+}
+
+@keyframes expandCircle {
+    0% {
+        transform: translate(-50%, -50%) scale(1); /* Initial state */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(9); /* Final state after expansion */
+    }
+}
